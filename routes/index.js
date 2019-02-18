@@ -5,7 +5,7 @@ let router = express.Router();
 router.get('/', (req, res, next) => {
   res.render('home', { title: 'Home' });
 });
-
+/* Route renders page located in about/content folder in views*/
 router.get('/about', (req, res, next) => {
   res.render('about/content', { title: 'About Me' });
 });
